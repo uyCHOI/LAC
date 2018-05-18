@@ -6,13 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here<sitemesh:write property="title"/></title>
-    <link rel="stylesheet" href="/minipro3/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/project_lac/assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
-    <link rel="stylesheet" href="/minipro3/assets/css/Footer-Basic.css" />
-    <link rel="stylesheet" href="/minipro3/assets/css/Footer-Clean.css" />
-<script src="/minipro3/assets/js/jquery.min.js"></script>
-<script src="/minipro3/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/minipro3/assets/js/theme.js"></script>
+    <link rel="stylesheet" href="/project_lac/assets/css/Footer-Basic.css" />
+    <link rel="stylesheet" href="/project_lac/assets/css/Footer-Clean.css" />
+ 
+<script src="/project_lac/assets/js/jquery.min.js"></script>
+<script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/project_lac/assets/js/theme.js"></script>
     <sitemesh:write property="write"/>
 </head>
 <body>
