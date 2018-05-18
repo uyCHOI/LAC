@@ -4,15 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet"
-	href="/project_lac/assets/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
-<link rel="stylesheet" href="/project_lac/assets/fonts/ionicons.min.css">
-<link rel="stylesheet"
-	href="/project_lac/assets/fonts/simple-line-icons.min.css">
-<link rel="stylesheet"
-	href="/project_lac/assets/css/Login-Form-Clean.css" />
 </head>
 <body>
 <div class="container"></div>
@@ -37,8 +28,6 @@
 			<a href="#" class="forgot">Forgot your email or password?</a>
 		</form>
 	</div>
-	<script src="/project_lac/assets/js/jquery.min.js"></script>
-	<script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/project_lac/assets/js/theme.js"></script>
+
 </body>
 </html>

@@ -4,14 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-   <link rel="stylesheet" href="/project_lac/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/project_lac/https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="/project_lac/assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="/project_lac/assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="/project_lac/assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="/project_lac/assets/css/Footer-Clean.css">
-    <link rel="stylesheet" href="/project_lac/assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="/project_lac/assets/css/Registration-Form-with-Photo.css">
 </head>
 <body>
     <main class="page landing-page"></main>
