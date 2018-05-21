@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemesh>
-	<mapping path="/*" decorator="/jsp/template/decorator.jsp"></mapping>
+	<mapping path="/jsp/user/login.jsp" decorator="/jsp/template/decorator.jsp"></mapping>
+	<mapping path="/jsp/user/register.jsp" decorator="/jsp/template/decorator.jsp"></mapping>
+	<mapping path="/jsp/template/decorator.jsp" exclude="true"/>
+	<mapping path="/jsp/template/menu.jsp" exclude="true"/>
+	<mapping path="/*" decorator="/jsp/template/menu.jsp"/>
+	<!-- <mapping path="/*" exclude="true"/>  -->
 </sitemesh>
