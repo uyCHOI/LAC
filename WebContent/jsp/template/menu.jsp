@@ -219,16 +219,17 @@
     #create_class div {
 		border: none;
 		height: 40px;
-		margin-top: 8px;
+		margin-top: 9px;
 	}
 	#create_class{
 		width: 30%;
 		height: 10%;
-		top: 40%;
-		left:40%;
-		z-index:1;
+		top: 45%;
+		left: 35%;
+		z-index:3;
 		position: fixed;
-		background-color: gray;
+		background-color: #454547;
+		display: none;
 	}
 
 	
@@ -240,13 +241,51 @@
 		width: 80%;
 		float: left;
 		font-size: 15px;
+		margin-right: 10px;
+		line-height: 30px;
+	}
+	#calss_name[placeholder]:empty:before {
+	    content: attr(placeholder);
+	    color: #555; 
 	}
 	#create_btn{
 		float: right;
 		width: 20%;
+		margin-left: 10px;
 	}
 	#create_btn_st{
 		border-radius: 4px;
+		width: 60px;
+		font-size: 20px;
+	}
+	
+	#back_ground_shadow{
+		background-color: black;
+		opacity: 0.8;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		position: fixed;
+		display: none;
+	}
+	
+	#exit_btn_button{
+		display: none;
+	}
+	
+	.friends_addr,.glyphicon-calendar{
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	.friends_addr_side{
+		margin-top: 8px;
+	}
+	.glyphicon-calendar{
+		margin-top: 7px;
+	}
+	.fa-cog{
+		font-size: 25px;
+		margin-top: 4px;
 	}
 	
     body{
@@ -257,32 +296,53 @@
 </style>
 </head>
 <body>
+<div id="back_ground_shadow">
+</div>
+
+
 <div id="menu_bar">
     <div id="menu_bar_row" class="row">
         <div class="menu_btn btn btn-default"><i class="material-icons" style="font-size:36px">vpn_key</i></div>
-        <div class="menu_btn btn btn-default">Exit</div>
-        <div class="menu_btn btn btn-default">N</div>
-        <div class="menu_btn btn btn-default">친구</div>
-        <div class="menu_btn btn btn-default">캘린더</div>
+        <div class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
+        <div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div>
+        <div id="create_btn_button" class="menu_btn btn btn-default">New</div>
+        <div class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
+        <div class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div>
         <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i></div> 
     </div>
 </div>
 
+<div>
+
+</div>
+
+
+
 <div id="create_class">
 	<div>
-		<div id="calss_name" contenteditable="true">
-			테스트
-		</div>
+		<div id="calss_name" contenteditable="true" placeholder="Class 이름을 알려주세요!"></div>
 		<div ib="create_btn">
-			<div id="create_btn_st" class="menu_btn btn btn-default">Ok</div>
+			<div id="create_btn_st" class="menu_btn btn btn-default">Finish</div>
 		</div>
 	</div>
 </div>
+
 
     <sitemesh:write property="body"/>
 
 <script>
 
+	$("#back_ground_shadow").on("click",function(){
+		$(this).fadeToggle(300)
+		$("#create_class").fadeOut(300);
+	})
+	$("#create_btn_button").on("click",()=>{
+		$("#create_class").fadeToggle(300);
+		$("#back_ground_shadow").fadeToggle(300);
+	})
+	
+	
+	
 </script>
 
 </body>
