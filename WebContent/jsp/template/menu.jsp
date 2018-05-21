@@ -6,16 +6,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here<sitemesh:write property="title"/></title>
-
-<script src="/project_lac/assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar.min.js"></script>
+<link href="../../assets/css/fullcalendar.min.css" rel="stylesheet">
+<link href="../../assets/css/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/project_lac/assets/js/theme.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <sitemesh:write property="write"/>
+    <sitemesh:write property="head"/>
+
 <style>
+	#calendar, #calendar div{
+    	border: none;
+	}
 	#menu_bar{
         float: right;
         border:none;
@@ -219,16 +226,17 @@
     #create_class div {
 		border: none;
 		height: 40px;
-		margin-top: 8px;
+		margin-top: 9px;
 	}
 	#create_class{
 		width: 30%;
 		height: 10%;
-		top: 40%;
-		left:40%;
-		z-index:1;
+		top: 45%;
+		left: 35%;
+		z-index:3;
 		position: fixed;
-		background-color: gray;
+		background-color: #454547;
+		display: none;
 	}
 
 	
@@ -240,13 +248,51 @@
 		width: 80%;
 		float: left;
 		font-size: 15px;
+		margin-right: 10px;
+		line-height: 30px;
+	}
+	#calss_name[placeholder]:empty:before {
+	    content: attr(placeholder);
+	    color: #555; 
 	}
 	#create_btn{
 		float: right;
 		width: 20%;
+		margin-left: 10px;
 	}
 	#create_btn_st{
 		border-radius: 4px;
+		width: 60px;
+		font-size: 20px;
+	}
+	
+	#back_ground_shadow{
+		background-color: black;
+		opacity: 0.8;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		position: fixed;
+		display: none;
+	}
+	
+	#exit_btn_button{
+		display: none;
+	}
+	
+	.friends_addr,.glyphicon-calendar{
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	.friends_addr_side{
+		margin-top: 8px;
+	}
+	.glyphicon-calendar{
+		margin-top: 7px;
+	}
+	.fa-cog{
+		font-size: 25px;
+		margin-top: 4px;
 	}
 	
     body{
@@ -257,32 +303,54 @@
 </style>
 </head>
 <body>
+<div id="back_ground_shadow">
+</div>
+
+
 <div id="menu_bar">
     <div id="menu_bar_row" class="row">
         <div class="menu_btn btn btn-default"><i class="material-icons" style="font-size:36px">vpn_key</i></div>
-        <div class="menu_btn btn btn-default">Exit</div>
-        <div class="menu_btn btn btn-default">N</div>
-        <div class="menu_btn btn btn-default">친구</div>
-        <div class="menu_btn btn btn-default">캘린더</div>
+        <div class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
+        <a href="/project_lac/jsp/main/main.jsp"><div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div></a>
+        <div id="create_btn_button" class="menu_btn btn btn-default">New</div>
+        
+        <div class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
+        <a href="/project_lac/jsp/calendar/calendar.jsp"><div id="calendar_btn_button" class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div></a>
         <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i></div> 
     </div>
 </div>
 
+<div>
+
+</div>
+
+
+
 <div id="create_class">
 	<div>
-		<div id="calss_name" contenteditable="true">
-			테스트
-		</div>
+		<div id="calss_name" contenteditable="true" placeholder="Class 이름을 알려주세요!"></div>
 		<div ib="create_btn">
-			<div id="create_btn_st" class="menu_btn btn btn-default">Ok</div>
+			<div id="create_btn_st" class="menu_btn btn btn-default">Finish</div>
 		</div>
 	</div>
 </div>
+
 
     <sitemesh:write property="body"/>
 
 <script>
 
+	$("#back_ground_shadow").on("click",function(){
+		$(this).fadeToggle(300)
+		$("#create_class").fadeOut(300);
+	})
+	$("#create_btn_button").on("click",()=>{
+		$("#create_class").fadeToggle(300);
+		$("#back_ground_shadow").fadeToggle(300);
+	})
+	$($("#calendar_btn_button").fadeIn(300));
+	
+	
 </script>
 
 </body>

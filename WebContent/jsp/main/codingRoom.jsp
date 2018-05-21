@@ -313,7 +313,7 @@
                         <i class="clip_icon material-icons">color_lens</i>
                     </div>
                     <div id="clip_friend_btn" class="clip_btn btn btn-default">
-                        <i class="clip_icon material-icons">account_box</i>
+                        <i class="fa fa-address-card friends_addr"></i>
                     </div>
 
                 </div>  <!-- end #chatting_clip -->
@@ -323,7 +323,6 @@
 
                     <div id="chatting_text">
                         <div id="text_box" contenteditable="true">
-                            채팅내용입력
                         </div>
                     </div>
 
@@ -344,6 +343,13 @@
     </div>  <!-- end #main_area -->
     <script type="text/javascript" src="../../assets/js/coding.js"></script>
 <script>
+	$(function() {
+		setTimeout(() => {
+			$("#exit_btn_button").fadeIn(1000);
+			$("#create_btn_button").fadeOut(1000);
+		}, 100);
+	});
+
     var side_bar_btn = false;
     var side_box = $("#side_bar_row");
     var side_btn = $("#side_bar_btn");

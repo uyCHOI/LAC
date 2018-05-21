@@ -23,6 +23,16 @@
     <script src="/project_lac/assets/js/jquery.min.js"></script>
     <script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/project_lac/assets/js/theme.js"></script>
+    
+    
+    <script>
+	$(function() {
+		setTimeout(() => {
+			$("#exit_btn_button").fadeOut(1000);
+			$("#create_btn_button").fadeIn(1000);
+		}, 100);
+	});
+    </script>
 </body>
 
 </html>
