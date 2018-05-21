@@ -10,6 +10,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <style>
     div{
         border:1px solid black;
@@ -76,7 +77,7 @@
         height: 100%;
         margin-top: 10px;
         background-color: aliceblue;
-        
+        position: relative;
     }
     #side_bar_btn{
         color: aliceblue;
@@ -265,10 +266,20 @@
                             <span>명령문 box</span>
                         </li>
                 </div>  <!-- end #order_box -->       
+                <div class="content_box row">
+	                <div class="block_box col-md-6">   <!-- start .content_box -->
+	                    <div class="entryMouseViewWorkspace"></div>
+	                    
+	                </div>  
+	                
+	                <div class="text_line col-md-6">   <!-- start .content_box -->
+	                </div>  
+                    <button id="compile" type="button" class="btn btn-default btn-sm">
+			          <span class="glyphicon glyphicon-play"></span> Compile
+			        </button>
+                </div>
                 
-                <div class="content_box row">   <!-- start .content_box -->
-                    .col-md-8
-                </div>  <!-- end .content_box -->
+                <!-- end .content_box -->
                 
             </div>  <!-- end #coding_area -->
 
@@ -331,6 +342,7 @@
         </div>  <!-- end #chatting_area -->
 
     </div>  <!-- end #main_area -->
+    <script type="text/javascript" src="../../assets/js/coding.js"></script>
 <script>
     var side_bar_btn = false;
     var side_box = $("#side_bar_row");

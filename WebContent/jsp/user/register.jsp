@@ -13,6 +13,7 @@
             <form method="post">
                 <h2 class="text-center"><strong>Create</strong> an account.</h2>
                 <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" type="text" name="nickname" placeholder="nickname"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
                 <div class="form-group">
