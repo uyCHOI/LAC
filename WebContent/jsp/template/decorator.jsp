@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="/project_lac/assets/css/Footer-Clean.css" />
     <link rel="stylesheet" href="/project_lac/assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="/project_lac/assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="/project_lac/assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="/project_lac/assets/css/Login-Form-Clean.css">	
     <link rel="stylesheet" href="/project_lac/assets/css/Registration-Form-with-Photo.css">
+    <link href="../../assets/css/fullcalendar.min.css" rel="stylesheet">
+	<link href="../../assets/css/fullcalendar.print.min.css" rel="stylesheet" media="print">
+	
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/moment.min.js"></script>
+	<script src="../../assets/js/fullcalendar.min.js"></script>
  
-<script src="/project_lac/assets/js/jquery.min.js"></script>
 <script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/project_lac/assets/js/theme.js"></script>
-    <sitemesh:write property="write"/>
+    <sitemesh:write property="head"/>
 </head>
 <body>
   <div class = "container">

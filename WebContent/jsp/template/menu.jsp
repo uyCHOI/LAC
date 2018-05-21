@@ -6,16 +6,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here<sitemesh:write property="title"/></title>
-
-<script src="/project_lac/assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar.min.js"></script>
+<link href="../../assets/css/fullcalendar.min.css" rel="stylesheet">
+<link href="../../assets/css/fullcalendar.print.min.css" rel="stylesheet" media="print">
 <script src="/project_lac/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="/project_lac/assets/js/theme.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <sitemesh:write property="write"/>
+    <sitemesh:write property="head"/>
+
 <style>
+	#calendar, #calendar div{
+    	border: none;
+	}
 	#menu_bar{
         float: right;
         border:none;
@@ -304,10 +311,11 @@
     <div id="menu_bar_row" class="row">
         <div class="menu_btn btn btn-default"><i class="material-icons" style="font-size:36px">vpn_key</i></div>
         <div class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
-        <div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div>
+        <a href="/project_lac/jsp/main/main.jsp"><div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div></a>
         <div id="create_btn_button" class="menu_btn btn btn-default">New</div>
+        
         <div class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
-        <div class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div>
+        <a href="/project_lac/jsp/calendar/calendar.jsp"><div id="calendar_btn_button" class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div></a>
         <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i></div> 
     </div>
 </div>
@@ -340,7 +348,7 @@
 		$("#create_class").fadeToggle(300);
 		$("#back_ground_shadow").fadeToggle(300);
 	})
-	
+	$($("#calendar_btn_button").fadeIn(300));
 	
 	
 </script>
