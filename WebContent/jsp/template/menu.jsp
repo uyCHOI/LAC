@@ -561,7 +561,7 @@
 <%-- 개인정보 수정 --%>
 <div id="my_info">
 		<div id="my_profile_img">
-			<img src="defalutImg.jpg"/>
+			<img src="/project_lac/jsp/template/defalutImg.jpg"/>
 		</div>
 		<div id="my_profile_repair">
 			<div>
@@ -590,43 +590,43 @@
 		<div class="friends_search_list">
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
 
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">삭제</span>
 			</div>
@@ -645,67 +645,67 @@
 		
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
 		
 			<div class="friedns_icon">
-				<img src="defalutImg.jpg">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
 				<span>닉네임#1223</span>
 				<span class="friends_utill_btn btn btn-default">추가</span>
 			</div>
@@ -722,42 +722,42 @@
 			</div>
 			<div class="friends_search_r_list">
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">수락</span>
 				</div>
@@ -772,43 +772,43 @@
 			
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
 			
 				<div class="friedns_icon">
-					<img src="defalutImg.jpg">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
 					<span>닉네임#1223</span>
 					<span class="friends_utill_btn btn btn-default">거절</span>
 				</div>
