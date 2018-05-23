@@ -20,7 +20,7 @@
     <sitemesh:write property="head"/>
 
 <style>
-	#calendar, #calendar div{
+	#calendar, #calendar div, #myModal, #myModal div, .table-responsive, .table-responsive table{
     	border: none;
 	}
 	#menu_bar{
