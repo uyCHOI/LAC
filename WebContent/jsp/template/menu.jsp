@@ -71,9 +71,114 @@
         background-color: #454547;
         color: aliceblue;
         cursor: pointer;
-        z-index: 1;
+        z-index: 100;
         box-shadow:1px 1px 1px rgb(0, 0, 0);
     }
+    
+    #side_box div{
+    	border: none;
+    }
+    #side_name{
+    	text-align: center;
+    	font-size: 30px;
+    	margin-left: 5px;
+    	width: 100%;
+    	height: 8%;
+    	
+    }
+    #side_img{
+    	width: 100%;
+    	height: 22%;
+    }
+    #side_img img{
+    	width: 100%;
+    	height: 100%;
+    }
+    #side_board{
+    	width: 100%;
+    	height: 10%;
+    	text-align: center;
+    	padding: 10px;
+    }
+    #side_member_list{
+    	width: 100%;
+    	height: 40%;
+    	background-color: aliceblue;
+    	overflow: auto;
+    	overflow-x: hidden;
+    }
+    #side_member_text{
+    	font-size: 16px;
+    	color:black;
+    	margin-left: 10px;
+    	margin-top: 10px;
+    	height: 10%;
+    	width: 20%;
+    }
+    #side_member_info{
+    	height: auto;
+    	width: 80%;
+    	margin-left: 12%;
+    	
+    }
+    .side_member_icon{
+    	width: 93% !important;
+    	margin-top: 15px !important;
+    	margin-bottom: 15px !important;
+    }
+    .side_member_icon img{
+    	width: 15%;
+    	height: 80%;
+    	border-radius: 30px; 
+    }
+    
+    .side_btn_button{
+    	height: 6%;
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    	margin-top: 2%;
+    	margin-bottom: 2%;
+    	font-size: 20px;
+    }
+    .side_member_icon:hover{
+    	color:#979BA6;
+    }
+    #friends_invitation_btn{
+    	margin-top: 6%;
+    }
+    .update_btns,.side_img_btns{
+    	transition:.5s;
+    	float: right;
+    	width: 30px;
+    	height: 30px;
+    	border-radius: 30px;
+    	opacity: 0.3;
+    	margin-top: 6px;
+    	margin-right: 5px;
+    }
+    .update_btns i {
+    	margin-top: -4px;
+    	margin-left: -9px;
+    }
+
+    .side_img_btns:hover,.update_btns:hover{
+    	opacity: 1;
+    }
+    .side_img_btns i{
+   		margin-top: -4px;
+    	margin-left: -10px;
+    }
+    .side_img_btns{
+    	position: absolute;
+    	right: 8%;
+    	top: 26%;
+    }
+    
+    
+    
+    
+    
     #main_area{
         margin-left: 44px;
         top:10px;
@@ -136,6 +241,7 @@
         margin-left: 34px;
         height: 94.5%;
         width: 84%;
+        background-color: #0074d9;
     }
     #main_area div{
        /* border: none; */
@@ -233,7 +339,7 @@
 		height: 10%;
 		top: 45%;
 		left: 35%;
-		z-index:3;
+		z-index:1000;
 		position: fixed;
 		background-color: #454547;
 		display: none;
@@ -275,7 +381,7 @@
 		width: 20%;
 		top: 20%;
 		left: 40%;
-		z-index:3;
+		z-index:1000;
 		position: fixed;
 		background-color: #454547;
 		display: none;
@@ -328,7 +434,7 @@
 		width: 20%;
 		top: 25%;
 		left: 40%;
-		z-index:3;
+		z-index:1000;
 		position: fixed;
 		background-color: #454547;
 		display: none;
@@ -340,7 +446,7 @@
 		width: 100%;
 		border:none;
 		position: absolute;
-		z-index: 5;
+		z-index: 1500;
 	}
 	#new_friends{
 		float:left;
@@ -348,7 +454,7 @@
 		width: 100%;
 		border:none;
 		position: absolute;
-		z-index: 4;
+		z-index: 1400;
 	}
 	#request_friends{
 		float:left;
@@ -356,7 +462,7 @@
 		width: 100%;
 		border:none;
 		position: absolute;
-		z-index: 4;
+		z-index: 1400;
 	}
 	#request_friends div{
 		border: none;
@@ -488,7 +594,7 @@
 		opacity: 0.8;
 		width: 100%;
 		height: 100%;
-		z-index: 2;
+		z-index: 500;
 		position: fixed;
 		display: none;
 	}
@@ -517,6 +623,11 @@
 	}
 	
 	
+	
+	
+	
+	
+	
     body{
         width: 100%;
         height: 100%;
@@ -533,7 +644,7 @@
     <div id="menu_bar_row" class="row">
         <div class="menu_btn btn btn-default"><i class="material-icons" style="font-size:36px">vpn_key</i></div>
         <div id="my_info_btn_button" class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
-        <a href="/project_lac/jsp/main/main.jsp"><div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div></a>
+        <a href="/project_lac/jsp/main/waitRoom.jsp"><div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div></a>
         <div id="create_btn_button" class="menu_btn btn btn-default">New</div>
         
         <div id="friends_btn_button" class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
@@ -850,27 +961,27 @@
 		$(this).css({"background-color":"aliceblue","cursor":"auto"});
 		$("#my_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
 		$("#request_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
-		$("#new_friends").css({"z-index":5});
-		$("#my_friends").css({"z-index":4});
-		$("#request_friends").css({"z-index":4});
+		$("#new_friends").css({"z-index":1500});
+		$("#my_friends").css({"z-index":1400});
+		$("#request_friends").css({"z-index":1400});
 	})
 	
 	$("#my_friends_menu").on("click",function(){
 		$(this).css({"background-color":"aliceblue","cursor":"auto"});
 		$("#new_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
 		$("#request_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
-		$("#my_friends").css({"z-index":5});
-		$("#new_friends").css({"z-index":4});
-		$("#request_friends").css({"z-index":4});
+		$("#my_friends").css({"z-index":1500});
+		$("#new_friends").css({"z-index":1400});
+		$("#request_friends").css({"z-index":1400});
 	})
 	
 	$("#request_friends_menu").on("click",function(){
 		$(this).css({"background-color":"aliceblue","cursor":"auto"});
 		$("#new_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
 		$("#my_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
-		$("#request_friends").css({"z-index":5});
-		$("#my_friends").css({"z-index":4});
-		$("#new_friends").css({"z-index":4});
+		$("#request_friends").css({"z-index":1500});
+		$("#my_friends").css({"z-index":1400});
+		$("#new_friends").css({"z-index":1400});
 	})
 	
 </script>

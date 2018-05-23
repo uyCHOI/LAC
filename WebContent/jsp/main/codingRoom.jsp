@@ -196,8 +196,77 @@
         <div id="side_bar_row" class="row">
             <div id="side_bar_btn">open</div>
             <div id="side_box">
-                알림창 박스
-
+                <div id="side_name">
+                <span>채팅방 이름</span>
+                <span class="update_btns btn btn-default"><i class="material-icons">create</i></span>
+                </div>
+				<div id="side_img">
+					<img src="/project_lac/jsp/template/defalutImg.jpg">
+					<span class="side_img_btns btn btn-default"><i class="material-icons">wallpaper</i></span>
+				</div>
+				<div id="side_board">
+					<span>텔테테테에레테렝테렡ㄹ</span> <span class="side_board_update_btn btn btn-default">수정</span>
+				</div>
+				<div id="side_member_list">
+					<div id="side_member_text">참여목록</div>
+					<div id="side_member_info">
+					
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+					
+						<div class="side_member_icon friedns_icon">
+							<img src="/project_lac/jsp/template/defalutImg.jpg">
+							<span>닉네임#1223</span>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div id="friends_invitation_btn" class="side_btn_button btn btn-default">친구초대</div>
+				<div class="side_btn_button btn btn-default">클래스 탈퇴</div>
             </div>
         </div>
     </div>
