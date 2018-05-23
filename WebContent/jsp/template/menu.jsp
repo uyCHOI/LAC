@@ -266,6 +266,223 @@
 		font-size: 20px;
 	}
 	
+	#my_info div{
+		border: none;
+	}
+	
+	#my_info{
+		height: 60%;
+		width: 20%;
+		top: 20%;
+		left: 40%;
+		z-index:3;
+		position: fixed;
+		background-color: #454547;
+		display: none;
+	}
+	#my_profile_img{
+		height: 60%;
+		width: 100%;
+	}
+	#my_profile_img img{
+		border: 1px solid black;
+		margin: 10%;
+		width: 80%;
+		height: 80%;
+	}
+	.profile_repair_btn{
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		margin-bottom: 3px;
+	}
+	.profile_repair_btn i{
+		margin-left: -9px;
+		margin-top: -2px;
+		font-size: 22px;
+	}
+	#my_profile_repair div{
+		width: 80%;
+		height: 20%;
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 5%;
+		background-color: aliceblue;
+		border-radius: 10px;
+		padding-top: 10px;
+	}
+	#my_profile_repair div:nth-child(1){
+		height: 34%;
+		padding-top: 5px;
+	}
+	
+	#my_profile_repair{
+		height: 40%;
+		width: 100%;	
+	}
+
+	
+	#friends_list{
+		height: 50%;
+		width: 20%;
+		top: 25%;
+		left: 40%;
+		z-index:3;
+		position: fixed;
+		background-color: #454547;
+		display: none;
+	}
+	
+	#my_friends{
+		float:left;
+		height: 100%;
+		width: 100%;
+		border:none;
+		position: absolute;
+		z-index: 5;
+	}
+	#new_friends{
+		float:left;
+		height: 100%;
+		width: 100%;
+		border:none;
+		position: absolute;
+		z-index: 4;
+	}
+	#request_friends{
+		float:left;
+		height: 100%;
+		width: 100%;
+		border:none;
+		position: absolute;
+		z-index: 4;
+	}
+	#request_friends div{
+		border: none;
+	}
+	#info_friends{
+		float:left;
+		height: 100%;
+		width: 50%;
+	}
+	
+	.friends_search_list{
+		width: 100%;
+		height: 90%;
+		overflow: auto;
+		overflow-x: hidden;
+		background-color: aliceblue;
+		border: none;
+	
+	}
+	.friedns_icon:hover{
+		background-color: white;
+		border: 1px solid #979BA6 !important;
+	}
+	
+	.search_friends{
+		width: 100%;
+		height: 10%;
+		background-color: aliceblue;
+		border: none;
+	}
+	
+	.friends_area img{
+		width: 20%;
+		height: 100%;
+		border-radius: 30px;
+		padding: 5px;
+	}
+	
+	.friends_utill_btn{
+		float: right;
+		margin-top: 3%;
+		margin-right: 5%;
+	}
+	
+	.friedns_icon{
+		border:none;
+		height: 15%;
+		width: 97%;
+		border-radius: 20px;
+		margin: 4px;
+		background-color: #979BA6;
+		cursor: pointer;
+	}
+	
+	.search_friends input{
+		width: 94%;
+		height: 90%;
+		font-size: 18px;
+		margin-left: 3%;
+		margin-right: 3%;
+		margin-top: 4px;
+		border-radius: 20px;
+		padding-left: 5px;
+	}
+	
+	.friends_menu{
+		width: auto;
+		height: 10%;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 5px;
+		position: absolute;
+		top:-10%;
+		background-color: aliceblue;
+		border: none;
+	}
+	#my_friends_menu{
+		left:0%;
+		width: 34%;
+	}
+	#new_friends_menu{
+		left:35.4%;
+		background-color: #A0A2AA;
+		cursor: pointer;
+		width: 37%;
+	}
+	#request_friends_menu{
+		left:74%;
+		background-color: #A0A2AA;
+		cursor: pointer;
+		width: 26%;
+	}
+	.friends_r_list{
+		background-color: aliceblue;
+		border:none;
+		width: 100%;
+		height: 10%;
+		text-align: center;
+		font-size: 15px;
+	}
+	.friends_r_list span{
+		border-radius: 40px;
+		width: 80%;
+		left: 10%;
+		opacity: 0.8;
+		background-color: #D0CECE;
+		
+	}
+	
+	.friends_r_area{
+		width: 100%;
+		height: 50%;
+
+	}
+	.friends_search_r_list{
+		background-color: aliceblue;
+		width:100%;
+		height:90%;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+	.friends_search_r_list .friedns_icon{
+		height: 30%;
+	}
+					
+	
 	#back_ground_shadow{
 		background-color: black;
 		opacity: 0.8;
@@ -274,6 +491,10 @@
 		z-index: 2;
 		position: fixed;
 		display: none;
+	}
+	
+	.fa-bell{
+		margin-top: 5px;
 	}
 	
 	#exit_btn_button{
@@ -295,6 +516,7 @@
 		margin-top: 4px;
 	}
 	
+	
     body{
         width: 100%;
         height: 100%;
@@ -310,11 +532,11 @@
 <div id="menu_bar">
     <div id="menu_bar_row" class="row">
         <div class="menu_btn btn btn-default"><i class="material-icons" style="font-size:36px">vpn_key</i></div>
-        <div class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
+        <div id="my_info_btn_button" class="menu_btn btn btn-default"><i class="fa fa-cog"></i></div>
         <a href="/project_lac/jsp/main/main.jsp"><div id="exit_btn_button" class="menu_btn btn btn-default">Exit</div></a>
         <div id="create_btn_button" class="menu_btn btn btn-default">New</div>
         
-        <div class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
+        <div id="friends_btn_button" class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
         <a href="/project_lac/jsp/calendar/calendar.jsp"><div id="calendar_btn_button" class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div></a>
         <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i></div> 
     </div>
@@ -325,7 +547,7 @@
 </div>
 
 
-
+<%-- 새 클래스 생성 --%>
 <div id="create_class">
 	<div>
 		<div id="calss_name" contenteditable="true" placeholder="Class 이름을 알려주세요!"></div>
@@ -336,6 +558,267 @@
 </div>
 
 
+<%-- 개인정보 수정 --%>
+<div id="my_info">
+		<div id="my_profile_img">
+			<img src="defalutImg.jpg"/>
+		</div>
+		<div id="my_profile_repair">
+			<div>
+				<span>닉네sssss임</span>
+				<span>#</span>
+				<span>3344</span>
+				<span class="profile_repair_btn btn btn-default"><i class="material-icons">mode_edit</i></span><br>
+				(<span>abcdefd123@naver.com</span>)
+			</div>
+			
+			<div class="btn btn-default">비밀번호변경</div>
+			<div class="btn btn-default">회원탈퇴</div>
+		</div>
+</div>
+
+
+<%-- 친구관련 --%>
+<div id="friends_list">
+	<div id="my_friends" class="friends_area">
+		<div id="my_friends_menu" class="friends_menu">
+			My Friends
+		</div>
+		<div class="search_friends">
+			<input type="text" placeholder="내 친구 검색">
+		</div>
+		<div class="friends_search_list">
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">삭제</span>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="new_friends" class="friends_area">
+		<div id="new_friends_menu" class="friends_menu">
+			New Friends
+		</div>
+		<div class="search_friends">
+			<input type="text" placeholder="새 친구 검색">
+		</div>
+		<div class="friends_search_list">
+		
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+		
+			<div class="friedns_icon">
+				<img src="defalutImg.jpg">
+				<span>닉네임#1223</span>
+				<span class="friends_utill_btn btn btn-default">추가</span>
+			</div>
+
+		</div>
+	</div>
+	<div id="request_friends" class="friends_area">
+		<div id="request_friends_menu" class="friends_menu">
+			Request
+		</div>
+		<div id="request_friends_list" class="friends_r_area">
+			<div class="friends_r_list">
+					<span>Request List</span>
+			</div>
+			<div class="friends_search_r_list">
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">수락</span>
+				</div>
+				
+			</div>
+		</div>
+		<div id="response_friends_list" class="friends_r_area">
+			<div class="friends_r_list">
+					<span>Response List</span>
+			</div>
+			<div class="friends_search_r_list">
+			
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+			
+				<div class="friedns_icon">
+					<img src="defalutImg.jpg">
+					<span>닉네임#1223</span>
+					<span class="friends_utill_btn btn btn-default">거절</span>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+
     <sitemesh:write property="body"/>
 
 <script>
@@ -343,13 +826,52 @@
 	$("#back_ground_shadow").on("click",function(){
 		$(this).fadeToggle(300)
 		$("#create_class").fadeOut(300);
+		$("#my_info").fadeOut(300);
+		$("#friends_list").fadeOut(300);
 	})
 	$("#create_btn_button").on("click",()=>{
 		$("#create_class").fadeToggle(300);
 		$("#back_ground_shadow").fadeToggle(300);
 	})
+	$("#my_info_btn_button").on("click",()=>{
+		$("#my_info").fadeToggle(300);
+		$("#back_ground_shadow").fadeToggle(300);
+	})
+	$("#friends_btn_button").on("click",()=>{
+		$("#friends_list").fadeToggle(300);
+		$("#back_ground_shadow").fadeToggle(300);
+	})
 	$($("#calendar_btn_button").fadeIn(300));
 	
+	
+	
+	
+	$("#new_friends_menu").on("click",function(){
+		$(this).css({"background-color":"aliceblue","cursor":"auto"});
+		$("#my_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#request_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#new_friends").css({"z-index":5});
+		$("#my_friends").css({"z-index":4});
+		$("#request_friends").css({"z-index":4});
+	})
+	
+	$("#my_friends_menu").on("click",function(){
+		$(this).css({"background-color":"aliceblue","cursor":"auto"});
+		$("#new_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#request_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#my_friends").css({"z-index":5});
+		$("#new_friends").css({"z-index":4});
+		$("#request_friends").css({"z-index":4});
+	})
+	
+	$("#request_friends_menu").on("click",function(){
+		$(this).css({"background-color":"aliceblue","cursor":"auto"});
+		$("#new_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#my_friends_menu").css({"background-color":"#A0A2AA","cursor":"pointer"});
+		$("#request_friends").css({"z-index":5});
+		$("#my_friends").css({"z-index":4});
+		$("#new_friends").css({"z-index":4});
+	})
 	
 </script>
 
