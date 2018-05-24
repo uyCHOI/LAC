@@ -6,8 +6,8 @@
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li role="presentation" class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li role="presentation" class="nav-item"><a href="index.html" class="nav-link active">Login</a></li>
+<!--                     <li role="presentation" class="nav-item"><a href="login.html" class="nav-link">Login</a></li> -->
                     <li role="presentation" class="nav-item"><a href="registration.html" class="nav-link">Register</a></li>
                 </ul>
             </div>
