@@ -68,7 +68,7 @@
         position: absolute;
         width: 450px;
         left: -400px;
-        background-color: #454547;
+        background-color: aliceblue;
         color: aliceblue;
         cursor: pointer;
         z-index: 100;
@@ -84,6 +84,7 @@
     	margin-left: 5px;
     	width: 100%;
     	height: 8%;
+    	color:blue;
     	
     }
     #side_img{
@@ -99,6 +100,7 @@
     	height: 10%;
     	text-align: center;
     	padding: 10px;
+    	color:blue;
     }
     #side_member_list{
     	width: 100%;
@@ -109,17 +111,18 @@
     }
     #side_member_text{
     	font-size: 16px;
-    	color:black;
+    	color:blue;
     	margin-left: 10px;
     	margin-top: 10px;
-    	height: 10%;
-    	width: 20%;
+    	height: auto;
+    	width: auto;
+    	position: fixed;
     }
     #side_member_info{
     	height: auto;
     	width: 80%;
     	margin-left: 12%;
-    	
+    	padding-top: 20px;
     }
     .side_member_icon{
     	width: 93% !important;
@@ -227,7 +230,7 @@
         
     }
     #side_bar_btn{
-        color: aliceblue;
+        color: blue;
         border: none;
         cursor: pointer;
         float: right;
@@ -241,7 +244,8 @@
         margin-left: 34px;
         height: 94.5%;
         width: 84%;
-        background-color: #0074d9;
+        background-color: aliceblue;
+        border: none;
     }
     #main_area div{
        /* border: none; */
