@@ -20,7 +20,7 @@
     <sitemesh:write property="head"/>
 
 <style>
-	#calendar, #calendar div, #myModal, #myModal div, .table-responsive, .table-responsive table{
+	#calendar, #calendar div{
     	border: none;
 	}
 	#menu_bar{
@@ -84,7 +84,7 @@
     	margin-left: 5px;
     	width: 100%;
     	height: 8%;
-    	color:blue;
+    	color:black;
     	
     }
     #side_img{
@@ -100,7 +100,7 @@
     	height: 10%;
     	text-align: center;
     	padding: 10px;
-    	color:blue;
+    	color:black;
     }
     #side_member_list{
     	width: 100%;
@@ -111,18 +111,21 @@
     }
     #side_member_text{
     	font-size: 16px;
-    	color:blue;
+    	color:black;
     	margin-left: 10px;
     	margin-top: 10px;
     	height: auto;
     	width: auto;
     	position: fixed;
+    	box-shadow: 3px 3px 8px gray;
+    	border-radius: 10px; 
+    	background-color: rgb(50,140,40,.4);
+    	top: 37%;
     }
     #side_member_info{
     	height: auto;
     	width: 80%;
     	margin-left: 12%;
-    	padding-top: 20px;
     }
     .side_member_icon{
     	width: 93% !important;
@@ -143,6 +146,7 @@
     	margin-top: 2%;
     	margin-bottom: 2%;
     	font-size: 20px;
+    	box-shadow: 5px 5px 10px gray;
     }
     .side_member_icon:hover{
     	color:#979BA6;
@@ -517,8 +521,8 @@
 		width: 97%;
 		border-radius: 20px;
 		margin: 4px;
-		background-color: #979BA6;
 		cursor: pointer;
+		color:black;
 	}
 	
 	.search_friends input{
@@ -636,6 +640,7 @@
         width: 100%;
         height: 100%;
         background-color:#202021;
+        margin: 0px !important;
     }
 </style>
 </head>

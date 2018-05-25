@@ -195,13 +195,14 @@
     <div id="side_bar">
         <div id="side_bar_row" class="row">
             <div id="side_bar_btn">open</div>
+            
             <div id="side_box">
                 <div id="side_name">
                 <span>채팅방 이름</span>
                 <span class="update_btns btn btn-default"><i class="material-icons">create</i></span>
                 </div>
 				<div id="side_img">
-					<img src="/project_lac/jsp/template/defalutImg.jpg">
+					<img src="/project_lac/jsp/template/The-Burning-Blue-computers-wallpapers-windows-7.jpg">
 					<span class="side_img_btns btn btn-default"><i class="material-icons">wallpaper</i></span>
 				</div>
 				<div id="side_board">
@@ -265,8 +266,8 @@
 						
 					</div>
 				</div>
-				<div id="friends_invitation_btn" class="side_btn_button btn btn-default">친구초대</div>
-				<div class="side_btn_button btn btn-default">클래스 탈퇴</div>
+				<div id="friends_invitation_btn" class="side_btn_button btn btn-primary">친구초대</div>
+				<div class="side_btn_button btn btn-danger">클래스 탈퇴</div>
             </div>
         </div>
     </div>
