@@ -630,12 +630,107 @@
 		margin-top: 4px;
 	}
 	
+	#noti_area div {
+		border:none;
+	}
+	
+	#noti_area{
+		position: fixed;
+		width: 20%;
+		height: 50%;
+		right: 4%;
+		bottom: 6%;
+		background-color: aliceblue;
+		border-radius: 4%; 
+		z-index: 1101;
+		padding: 8px;
+		display: none;
+	}
 	
 	
+	#noti_tri{
+	  width: 0px;height: 0px;
+	  border-top:30px solid aliceblue !important;
+	  border-bottom:24px solid transparent !important;
+	  border-right: 9px solid transparent !important;
+	  border-left: 15px solid  transparent !important;
+	  bottom: 2%;
+	  right: 3.53%;
+	  position: fixed;
+	  transform:skew(18deg,-53deg);
+	  z-index: 1100;
+	}
 	
+	#noti_screen{
+		width:94.5%;
+		height:96%;
+		overflow: auto;
+		overflow-x:hidden;
+		z-index: 1102;
+		position: absolute;
+		 
+	}
 	
+	.noti_info{
+		width: 100%;
+		height: 15%;
+		cursor: pointer;
+		margin-bottom: 3%;
+	}
 	
+	.noti_info:hover{
+		background-color: #f2eee8;
+	}
 	
+	.noti_img{
+		float: left;
+		height: 100%;
+		width: 20%;
+	}
+	
+	.noti_img img{
+		width: 100%;
+		height: 100%;
+		border-radius: 100%; 
+	}
+	
+	.noti_text{
+		float: right;
+		height: 100%;
+		width: 80%;
+		padding-top: 3%; 
+		padding-left: 3%;
+		position: relative;
+	}
+	
+	.noti_del_btn{
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		opacity: 0.2;
+		transition:0.3s;
+	}
+	.noti_del_btn:hover{
+		opacity: 1;
+	}
+	
+	.noti_new{
+		position: absolute;
+		right: 15%;
+		top: 0%;
+		color:red;
+	}
+	
+	#noti_cnt{
+		position: absolute;
+		bottom:28%;
+		right: 15%;
+		color:red;
+		border: none;
+		font-weight: bold;
+	}
+	
+
     body{
         width: 100%;
         height: 100%;
@@ -658,7 +753,10 @@
         
         <div id="friends_btn_button" class="menu_btn btn btn-default"><i class="fa fa-address-book friends_addr friends_addr_side"></i></div>
         <a href="/project_lac/jsp/calendar/calendar.jsp"><div id="calendar_btn_button" class="menu_btn btn btn-default"><span class="glyphicon glyphicon-calendar"></span></div></a>
-        <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i></div> 
+        <div id="noti_box" class="menu_btn btn btn-default"><i class="fa fa-bell" style="font-size:24px"></i>
+        <div id="noti_cnt">7</div>
+        </div> 
+   
     </div>
 </div>
 
@@ -939,6 +1037,97 @@
 	</div>
 </div>
 
+
+<div id="noti_area">
+	<div id="noti_screen">
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>친구이름</span><br>
+				<span>친구요청이 왔습니다.</span>
+				<i class="noti_new material-icons">fiber_new</i>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>친구이름</span><br>
+				<span>친구요청이 왔습니다.</span>
+				<i class="noti_new material-icons">fiber_new</i>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>친구이름</span><br>
+				<span>친구요청이 왔습니다.</span>
+				<i class="noti_new material-icons">fiber_new</i>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>친구이름</span><br>
+				<span>메세지가 왔습니다.</span>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>친구이름</span><br>
+				<span>친구요청이 왔습니다.</span>
+				<i class="noti_new material-icons">fiber_new</i>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>프로젝트 이름</span><br>
+				<span>메세지가 왔습니다.</span>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		<div class="noti_info">
+			<div class="noti_img">
+				<img src="/project_lac/jsp/template/defalutImg.jpg">
+			</div>
+			<div class="noti_text">
+				<span>프로젝트 이름</span><br>
+				<span>초대장이 왔습니다!</span>
+				<i class="noti_del_btn material-icons">cancel</i>
+			</div>
+		</div>
+		
+		
+		
+		
+	</div>
+	<div id="noti_tri"></div>
+</div>
+
     <sitemesh:write property="body"/>
 
 <script>
@@ -993,6 +1182,11 @@
 		$("#new_friends").css({"z-index":1400});
 	})
 	
+	$("#noti_box").on("click",function(){
+		$("#noti_area").fadeToggle(300);
+	})
+	
+
 </script>
 
 </body>
