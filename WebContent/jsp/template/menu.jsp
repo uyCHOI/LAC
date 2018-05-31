@@ -20,7 +20,7 @@
     <sitemesh:write property="head"/>
 
 <style>
-	#calendar, #calendar div{
+	#calendar, #calendar div, #newScheModal div, #scheduleList div, #editScheModal div{
     	border: none;
 	}
 	#menu_bar{
